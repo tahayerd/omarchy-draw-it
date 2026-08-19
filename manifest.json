@@ -6,7 +6,7 @@
   "author": "Taha",
   "license": "MIT",
   "description": "Screen drawing and annotation tool for Omarchy and Hyprland. Left-click to draw, right-click to erase.",
-  "repository": "https://github.com/taha/omarchy-draw-it",
+  "repository": "https://github.com/tahayerd/omarchy-draw-it",
   "kinds": [
     "bar-widget"
   ],
