@@ -25,7 +25,7 @@ Left-click the bar icon or press your custom shortcut to draw directly on top of
 ## Install
 
 ```sh
-omarchy plugin add https://github.com/taha/omarchy-draw-it.git --enable
+omarchy plugin add https://github.com/tahayerd/omarchy-draw-it.git --enable
 ```
 
 Place it on your bar (e.g. `right` section) and restart the shell:
