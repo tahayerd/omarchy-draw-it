@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.taha.draw-it",
+  "name": "Draw-It",
+  "version": "1.0.0",
+  "author": "Taha",
+  "license": "MIT",
+  "description": "Screen drawing and annotation tool for Omarchy and Hyprland. Left-click to draw, right-click to erase.",
+  "repository": "https://github.com/taha/omarchy-draw-it",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "Draw-It",
+    "category": "Tools",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "icon": "󰏫",
+      "defaultColor": "#ff4d4f",
+      "defaultWidth": 4,
+      "eraserRadius": 18,
+      "clearOnExit": false
+    },
+    "schema": [
+      {
+        "key": "icon",
+        "type": "string",
+        "label": "Bar icon",
+        "defaultValue": "󰏫",
+        "description": "Nerd Font glyph shown in the status bar."
+      },
+      {
+        "key": "defaultColor",
+        "type": "string",
+        "label": "Default drawing color",
+        "defaultValue": "#ff4d4f",
+        "description": "Hex color code for brush strokes."
+      },
+      {
+        "key": "defaultWidth",
+        "type": "integer",
+        "label": "Default brush thickness (px)",
+        "defaultValue": 4,
+        "min": 1,
+        "max": 30,
+        "step": 1,
+        "description": "Initial line thickness."
+      },
+      {
+        "key": "eraserRadius",
+        "type": "integer",
+        "label": "Eraser radius (px)",
+        "defaultValue": 18,
+        "min": 6,
+        "max": 60,
+        "step": 2,
+        "description": "Radius of right-click eraser circle."
+      },
+      {
+        "key": "clearOnExit",
+        "type": "boolean",
+        "label": "Clear drawings on exit",
+        "defaultValue": false,
+        "description": "Automatically clear canvas when exiting drawing mode."
+      }
+    ]
+  }
+}
